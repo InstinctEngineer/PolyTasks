@@ -1,6 +1,7 @@
 ﻿# PolyTasks
 
 PolyTasks is a lightweight task tracker that runs entirely in the browser and keeps your todos in sync across tabs using local storage.
+The true purpose of this program to allow testing for other projects within the InstinctEngineer pipeline. 
 
 ## Features
 - Fast task capture with a keyboard-friendly form
