@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PolyTasks</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="app">
+        <header class="app__header">
+            <h1>PolyTasks</h1>
+            <p class="app__subtitle">Keep track of what needs doing.</p>
+        </header>
+
+        <form id="taskForm" class="app__form" autocomplete="off">
+            <label for="taskInput" class="visually-hidden">Add a task</label>
+            <input id="taskInput" type="text" placeholder="Add a new task..." required />
+            <button type="submit">Add</button>
+        </form>
+
+        <section class="app__list">
+            <ul id="taskList" aria-live="polite"></ul>
+        </section>
+
+        <footer class="app__footer">
+            <p id="taskCounter">0 tasks remaining</p>
+        </footer>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

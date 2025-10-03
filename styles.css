@@ -1,0 +1,145 @@
+﻿:root {
+    color-scheme: light;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #dfe9f3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.app {
+    width: min(500px, 100%);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.app__header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1f2933;
+}
+
+.app__subtitle {
+    margin: 0.35rem 0 0;
+    color: #52606d;
+}
+
+.app__form {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.app__form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #cbd2d9;
+    font-size: 1rem;
+    color: #1f2933;
+}
+
+.app__form input:focus {
+    outline: 2px solid #3d5afe;
+    border-color: transparent;
+}
+
+.app__form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: #3d5afe;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.app__form button:hover {
+    background: #2b46d9;
+}
+
+.app__list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e4ebf3;
+}
+
+.task-item.completed {
+    background: #edf2ff;
+    border-color: #c3d2ff;
+}
+
+.task-item input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+.task-text {
+    flex: 1;
+    color: #1f2933;
+    word-break: break-word;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #8492a6;
+}
+
+.delete-button {
+    border: none;
+    background: none;
+    color: #ef4e4e;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.delete-button:hover {
+    color: #c81e1e;
+}
+
+.app__footer {
+    font-size: 0.95rem;
+    color: #52606d;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
